@@ -3,16 +3,28 @@
     src:url("Fonts/1475508/065a6b14-b2cc-446e-9428-271c570df0d9.woff2") format("woff2"),url("Fonts/1475508/65d75eb0-2601-4da5-a9a4-9ee67a470a59.woff") format("woff");
 }
 
+/* rhythm magic */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {  
+        margin:0; padding:0; 
+	text-rendering: optimizeLegibility;
+}
+
 body {
     text-align: center;
-    margin: 0px;
     font-family: "Avenir";
     background-color: #ffd;
     font-size: 12px;
 }
 
-.about {
-    padding: 0px;
+
+h1 {
+    line-height:1em;
+    font-size:1.5em;
+    font-weight:normal;
+    margin:0 0 1em 0;
+    background-color: GhostWhite;
+    width: 300px;
+    border: 15px GhostWhite;
 }
 
 .links {
@@ -20,10 +32,5 @@ body {
     word-spacing: 10px;
 }
 
-.header {
-  background-color: GhostWhite;
-  width: 300px;
-  border: 15px GhostWhite;
-  padding: 50px;
-  margin: 20px;
-}
+:link { color: #68693F; text-decoration: none; border-bottom: 1px dotted #ccc;}
+:visited { color: #68693F; text-decoration: none; }
