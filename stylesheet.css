@@ -1,7 +1,9 @@
 body {
     text-align: center;
     margin: 0px;
-    font-family: "Avenir";
+    font-family: "Georgia";
+    background-color: #ffd;
+    font-size: 12px;
 }
 
 .about {
@@ -11,4 +13,12 @@ body {
 .links {
     padding: 10px;
     word-spacing: 10px;
+}
+
+.header {
+  background-color: GhostWhite;
+  width: 300px;
+  border: 15px GhostWhite;
+  padding: 50px;
+  margin: 20px;
 }
