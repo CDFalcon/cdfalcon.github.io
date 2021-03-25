@@ -19,10 +19,10 @@ sup { vertical-align: super; line-height: .1em}
 pre { padding-left: 1em; }
 
 h1.fronttitle {
-        font-size:2em;
-        line-height: 1em;
+        font-size:3em;
+        line-height: 2em;
         margin-bottom: 0em; 
-        text-align: center;
+        text-align: left;
 }
 
 h1.title {
