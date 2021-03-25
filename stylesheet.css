@@ -19,11 +19,10 @@ sup { vertical-align: super; line-height: .1em}
 pre { padding-left: 1em; }
 
 h1.fronttitle {
-        font-size:3em;
-        line-height: 2em;
+        font-size:2em;
+        line-height: 1em;
         margin-bottom: 0em; 
         text-align: center;
-	font-family: "Georgia";
 }
 
 h1.title {
@@ -52,7 +51,7 @@ body { font-family: "Avenir"; background-color: #ffd;}
 :visited { color: #68693F; text-decoration: none; }
 
 h1.title { text-align: center; }
-h1.title a:link, h1.title a:visited, h1.fronttitle a:link, h1.fronttitle a:visited { background-color: #ffa; padding: .3em; padding-top: 3em; text-decoration: none; color: #C3C36E; font-weight: bold; text-transform: uppercase; letter-spacing: .1em; font-family: "Thomas Paine", Georgia; border-bottom: none;}
+h1.title a:link, h1.title a:visited, h1.fronttitle a:link, h1.fronttitle a:visited { background-color: #ffa; padding: .3em; padding-top: 3em; text-decoration: none; color: #C3C36E; font-weight: bold; text-transform: uppercase; letter-spacing: .1em; font-family: "Georgia"; border-bottom: none;}
 #banner { margin-left: 8em; }
 .content { max-width: 30em; margin-left: 8em;}
 hr { border: 0px;}
