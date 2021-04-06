@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Scatterbrain</title>
+		<link>https://colby.codes/weblog</link>
+		<description>A weblog by Colby Duke</description>
+		<language>en</language>
+		<pubDate>Thu, 25 Mar 2021 18:12:04 +0300</pubDate>
+		<item>
+			<title>Tastebreakers</title>
+			<link>https://colby.codes/weblog/tastebreakers</link>
+			<category>Weblog Entry</category>
+			<pubDate>Sat, 03 Apr 2021 05:26:51 GMT</pubDate>
+			<description><![CDATA[A short collection of songs I have recently been enjoying.]]></description>
+			<author>me@colby.codes</author>
+		</item>
+		<item>
+			<title>David Fincher and Momentum</title>
+			<link>https://colby.codes/weblog/fincher</link>
+			<category>Weblog Entry</category>
+			<pubDate>Sat, 27 Mar 2021 05:26:51 GMT</pubDate>
+			<description><![CDATA[My thoughts on David Fincher's most iconic trademark.]]></description>
+			<author>me@colby.codes</author>
+		</item>
+		<item>
+			<title>Ribbon Cutting by Colby Duke</title>
+			<link>https://colby.codes/weblog/ribboncutting</link>
+			<dc:creator>Administrator</dc:creator>
+			<category>Weblog Entry</category>
+			<pubDate>Thu, 25 Mar 2021 05:26:51 GMT</pubDate>
+			<description><![CDATA[The first entry about this weblog.]]></description>
+			<author>me@colby.codes</author>
+		</item>
+	</channel>
+</rss>
