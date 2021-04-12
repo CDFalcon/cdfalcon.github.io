@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis of r/gatech by Colby Duke</title>
+    <link rel="home" href="https://www.colby.codes/weblog" title="Home" />
+    <link rel="stylesheet" href="/stylesheet.css" type="text/css" />
+    <style type="text/css">
+        span.option:before { content: "(\000064\00006f\00006e\00006f\000072)"; color: #bba; }
+        .content { margin-top: 0; margin-left: 4em; }
+    </style>
+</head>
+<body>
+    <h1 class="fronttitle"><a class="hilite" href="/weblog" title="by Colby Duke">Scatterbrain</a></h1>	
+    <p class="byline" style="text-align: left; padding-left: 1em; margin-top: 0; margin-bottom: 0">by <a href="/">Colby Duke</a></p>
+
+    <div class="content">
+    
+        <h2 class="posttitle">Sentiment Analysis of r/gatech</h2>
+        <p><em>04/12/21</em></p>
+        
+        <p>Today, for the 347th time, a student complained about the number of negative posts on <a href="reddit.com/r/gatech">r/gatech</a>. As a user who frequents the subreddit (probably to an unhealthy degree), I have noticed these meta-type posts are appearing far too often. From my personal observations, I thought the sentiments expressed on r/gatech were certainly more negative than those expressed around campus, but I was not sure if this was normal for university subs or if r/gatech was a genuinely more depressing space. Therefore, I set out to attempt to find the answer via the tried and true computer science technique of Googling and clicking on the first result. Innovative, I know.</p>
+        <p>In order to determine if r/gatech was a typical college sub, I decided to utilize <a href="https://en.wikipedia.org/wiki/Sentiment_analysis">Sentiment Analysis</a> via <a href="https://github.com/cjhutto/vaderSentiment">VADER</a>. Why VADER? Well, its name sounded badass and it was invented by GTRI research scientists. Anyways, I found this lovely <a href="https://towardsdatascience.com/automate-sentiment-analysis-process-for-reddit-post-textblob-and-vader-8a79c269522f">article on Medium</a> which provided a method for applying VADER to Reddit comment sections scrapped by <a href="https://praw.readthedocs.io/en/latest/">PRAW</a>. This was close to what I needed, except I found two problems after implementing their methods in Python. First, PRAW is limited to fetching 1000 items per API call, and I wanted to analysis far more posts than that. Secondly, their code analyzed comment sections rather than post titles and (if applicable) content, which is what I wanted to focus on.</p>
+        <p>To fix these issues, I edited my code to employ Pushshift.io via <a href="https://github.com/dmarx/psaw">PSAW</a>. Now that I could successfully query and parse data from subreddits, I began my analysis. After a bit of deliberation, I settled on examining six other university subreddits which I considered similar to Georgia Tech: <a href="https://www.reddit.com/r/berkeley/comments/hcslr7/psa_to_any_noncal_student_lurking_this_subreddit/">UCB</a>, UCLA, UIUC, UT Austin, UMich, and UDub. All of these universities are top ranked computer science schools with very active subreddits. More importantly, all are public institutions. The reason I focused on only public institutions was because A: Georgia Tech, the school which I wished to compare the others to, is a public institution and B: private universities often have smaller and less active subreddits.</p>
+        <p><strong>Anyways, here are the results of my analysis:</strong></p>
+        <p>After parsing through 10,000 posts per subreddit and then analyzing the sentiments expressed in each, I classified each sentiment identified by VADER into one of three categories (as per the article above): strongly positive, strongly negative, or neither. I then calculated the percentage of positive and negative sentiments per subreddit in the table below.</p>
+      
+        <table>
+            <tr>
+                <th>University</th>
+                <th>Positive Sentiment %</th>
+                <th>Negative Sentiment %</th>
+            </tr>
+            <tr>
+                <td>Georgia Tech</td>
+                <td>25.31</td>
+                <td>8.07</td>
+            </tr>
+            <tr>
+                <td>Berkeley</td>
+                <td>27.00</td>
+                <td>12.32</td>
+            </tr>
+            <tr>
+                <td>UCLA</td>
+                <td>25.18</td>
+                <td>11.32</td>
+            </tr>
+            <tr>
+                <td>UIUC</td>
+                <td>26.50</td>
+                <td>10.52</td>
+            </tr>
+            <tr>
+                <td>UT Austin</td>
+                <td>28.92</td>
+                <td>8.12</td>
+            </tr>
+            <tr>
+                <td>UMich</td>
+                <td>28.07</td>
+                <td>9.66</td>
+            </tr>
+            <tr>
+                <td>UDub</td>
+                <td>27.47</td>
+                <td>9.44</td>
+            </tr>
+          </table>
+      
+          <p>I was surprised at the results, to say the least. While all of the subreddits seem to have relativity similar percentages of negative posts, r/gatech actually has the least by a slim margin. Maybe these university subreddits are still abnormally negative compared others, or maybe all universities tend to utilize their subreddits as rant spaces – I suppose a semi-anonymous platform would lend itself well to that purpose. I’m not sure and I won’t pretend to know enough about the subject to say definitively one way or another; draw your own conclusions. I’ll stick with mine: no matter how down you feel at Georgia Tech, there is always a student at UCB who is feeling worse.</p>
+    </div>
+</body> 
+</html>
