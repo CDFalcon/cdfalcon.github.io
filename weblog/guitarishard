@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guitar Is Hard by Colby Duke</title>
+    <link rel="home" href="https://www.colby.codes/weblog" title="Home" />
+    <link rel="stylesheet" href="/stylesheet.css" type="text/css" />
+    <style type="text/css">
+        span.option:before { content: "(\000064\00006f\00006e\00006f\000072)"; color: #bba; }
+        .content { margin-top: 0; margin-left: 4em; }
+        table { border-collapse: collapse; }
+        td, th {
+            border: 1px solid #D2D6BC;
+            text-align: left;
+            padding: .5em; }
+    </style>
+</head>
+<body>
+    <h1 class="fronttitle"><a class="hilite" href="/weblog" title="by Colby Duke">Scatterbrain</a></h1>	
+    <p class="byline" style="text-align: left; padding-left: 1em; margin-top: 0; margin-bottom: 0">by <a href="/">Colby Duke</a></p>
+
+    <div class="content">
+    
+        <h2 class="posttitle">Guitar Is Hard</h2>
+        <p><em>05/31/21</em></p>
+        
+        <p><b>e|------------------------------------------------|<br>B|------9----------9-----------10--------9-----9--|<br>G|-9-------9--8-------8---------------------------|<br>D|-----------------------9/11------11\9-----9-----|<br>A|------------------------------------------------|<br>E|------------------------------------------------|</b></p>
+        <p>Today I sat by a window for six hours trying to learn a simple guitar riff. <i>Brazil</i>, a catchy indie-pop song by British prodigy Declan McKenna, has been a favorite song of mine for years. I would go as far as to claim it is my second favorite song ever, surpassed only by <i>Reptilia</i> (The Strokes’ objectively best song). Declan penned <i>Brazil</i> when he was only 15 years of age.</p>
+        
+        <blockquote>
+        <p>"[McKenna’s songs] are protest songs, but sound anything but worthy or world-weary. Instead, they are sun-soaked aural fizz bombs which channel indie rock through his love of David Bowie and Abba."</p><sup id="fnref:a">1</sup></p>
+        </blockquote>
+        
+        <p>From the moment I first listened to it, I enjoyed everything about <i>Brazil</i>. The unique topic of the song (corruption at Brazil’s FIFA World Cup) and the endlessly catchy chorus were my favorite aspects. I’ve always wanted the ability to play it and now that I’m learning guitar, I decided to work towards that goal. The main riff of the song, which I included above, is not too complex. However, I am both a novice when it comes to electric guitar and more importantly had never attempted a slide before today (of which the riff has two).</p>
+        <p>Six hours after I began plucking, I managed to play the riff without error and with correct tempo. Outside of academic finals, I genuinely cannot remember the last time I sat for six hours in a row working on a single repetitive task without any variation. My fingers ached from the metal strings digging into their tips as I attempted slide after slide. My callouses have yet to develop to the point where I don’t feel anything when playing, because I certainly felt everything today. That being said, I played the riff.</p>
+        <p>Guitar is hard. I’m very new to it. But I’m getting better. Here’s to sticking with it.</p>
+        
+        <div class="footnotes">
+            <hr />
+            <ol>
+            <li id="fn:a">
+            <p>Declan McKenna: What Do You Think About the Car? review – sun-soaked protest songs, <i>The Guardian</i>, Thu 20 Jul 2017.</p>
+            </li>
+            </ol>
+        </div>
+    </div>
+</body> 
+</html>
