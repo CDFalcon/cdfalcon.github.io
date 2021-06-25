@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uber Intern: Unintentional Limbo by Colby Duke</title>
+    <link rel="home" href="https://www.colby.codes/weblog" title="Home" />
+    <link rel="stylesheet" href="/stylesheet.css" type="text/css" />
+    <style type="text/css">
+        span.option:before { content: "(\000064\00006f\00006e\00006f\000072)"; color: #bba; }
+        .content { margin-top: 0; margin-left: 4em; }
+        table { border-collapse: collapse; }
+        td, th {
+            border: 1px solid #D2D6BC;
+            text-align: left;
+            padding: .5em; }
+    </style>
+</head>
+<body>
+    <h1 class="fronttitle"><a class="hilite" href="/weblog" title="by Colby Duke">Scatterbrain</a></h1>	
+    <p class="byline" style="text-align: left; padding-left: 1em; margin-top: 0; margin-bottom: 0">by <a href="/">Colby Duke</a></p>
+
+    <div class="content">
+    
+        <h2 class="posttitle">Uber Intern: Unintentional Limbo</h2>
+        <p><em>06/25/21</em></p>
+        
+        <p>This entry is the second of my Uber Intern ‘series’ in which I discuss my experiences as a software engineer intern at Uber. Today’s entry will focus on a rather amusing mistake I made yesterday, which I hope everyone will enjoy.</p>
+        <p>Without diving into too specific details, my team at Uber focuses on Uber Eats’ price request service. After one places an Eats order, our service is called which then calculates the final price of the order and provides a breakdown of said cost. To test this service, we employ typical agile unit and end-to-end tests. For our end-to-end tests, we utilized a service called Cerberus. TLDR, Cerberus allows us to re-route production traffic from our website or app to staging and test servers instead of production servers. This enables us to test services using the Uber Eats app without changing any code in the app itself or creating a separate testing app.</p>
+        <p>Yesterday, I setup Cerberus on my work machine for the first time. Everything appeared to be running correctly, so I closed out the program with Ctrl+Z. No errors appeared and everything seemed to shut down without issue. When running Cerberus, one needs to specify which user UUID(s) will be set aside when the user(s) make production service calls and have their traffic routed through Cerberus test services. For the initial startup, I simply entered my personal UUID because I was not actually testing any features which would require a separate test account. I thought nothing of this until I attempted to order food with Uber Eats later that night, and my app kept hanging when requesting prices. Well, right before I submitted the help desk ticket I had drafted for the issue, I remember that my literal job was to develop price requests and this might have been my fault rather than the Uber’s.</p>
+        <p>After a bit of detective work, I realized the issue was occurring exclusively on my personal account, which was my first clue that I had managed to mess something up. Upon further reading and searching through our internal Stack Overflow forum, I realized what I had done wrong: by closing the Cerberus instance on my machine with Ctrl+Z rather than Ctrl+C, a final script which Cerberus runs when properly shutting down was never executed. This particular script untoggles all accounts marked for testing once Cerberus finishes closing. However, because the script never ran, my personal Uber account was still flagged as a test account and therefore had all of its price requests re-routed to a test server which (after I closed Cerberus) was no longer running! My account was suspended in a state of limbo.</p>
+        <p>Fixing this issue was straightforward: merely relaunching Cerberus and properly closing the program was enough to allow the script to run and unmark my personal account for testing. I suppose the moral of the story is to always properly close programs, especially those with which you are unfamiliar. Rather bland, but infinitely preferable to the 5 minute period where I was convinced I had managed to crash the entire pricing service for Eats.</p>
+      
+    </div>
+</body> 
+</html>
