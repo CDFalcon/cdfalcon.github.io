@@ -7,6 +7,14 @@
 		<language>en</language>
 		<pubDate>Thu, 25 Mar 2021 18:12:04 +0300</pubDate>
 		<item>
+			<title>On Blockchain</title>
+			<link>https://colby.codes/weblog/blockchain</link>
+			<category>Weblog Entry</category>
+			<pubDate>Wed, 04 Jan 2023 1:27:32 EST</pubDate>
+			<description><![CDATA[My thoughts on blockchain and crypto.]]></description>
+			<author>me@colby.codes</author>
+		</item>
+		<item>
 			<title>La La Land</title>
 			<link>https://colby.codes/weblog/lalaland</link>
 			<category>Weblog Entry</category>
@@ -26,7 +34,7 @@
 			<title>Summer, Snap, and Smartglasses</title>
 			<link>https://colby.codes/weblog/smartglasses</link>
 			<category>Weblog Entry</category>
-			<pubDate>Thu, 07 Apr 2022 06:54:12 EST</pubDate>
+			<pubDate>Thu, 07 Apr 2022 6:54:12 EST</pubDate>
 			<description><![CDATA[Updates on my summer plans and an overview of the current state of optical wearables.]]></description>
 			<author>me@colby.codes</author>
 		</item>
